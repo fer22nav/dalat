@@ -1,0 +1,82 @@
+// Importa las funciones y variables de Bootstrap
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+@import "bootstrap/scss/functions";
+
+// Sobrescribe las variables de Bootstrap
+$primary: #a18def;
+$secondary: #d8e100;
+$body-color: #143052;
+$link-color: #143052;
+$navbar-light-color: #143052;
+$body-color-light: #f5e9d7;
+
+$font-family-sans-serif: "Plus Jakarta Sans", sans-serif;
+
+// Importa el resto de Bootstrap
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/bootstrap";
+
+// Estilos personalizados adicionales (opcional)
+body {
+  font-family: $font-family-sans-serif;
+}
+
+a {
+  color: $link-color;
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $navbar-light-color;
+  &:hover {
+    color: $navbar-light-hover-color;
+  }
+}
+
+.btn-primary:hover {
+  background-color: $primary !important;
+}
+.navbar {
+  // background-color: $primary;
+  height: 96px;
+}
+
+.navbar-primary .navbar-brand,
+.navbar-primary .nav-link {
+  color: #ffffff;
+}
+
+.navbar-primary .nav-link:hover {
+  // color: lighten($primary, 10%);
+}
+.nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+.bg-custom-blue {
+  background-color: $body-color;
+  color: #fff;
+}
+.bg-light-purple {
+  background-color: $primary; /* Color de fondo personalizado */
+}
+
+.btn-secondary {
+  border-radius: 50px; /* Ajuste del borde redondeado */
+}
+.btn-secondary:hover {
+  background-color: $body-color; // Cambia a color primario en el hover
+  border-color: $body-color;
+  color: #fff; // Cambia el color del texto a blanco para contraste
+}
+
+.bg-light-beige {
+  background-color: $body-color-light; /* Color de fondo personalizado */
+}

@@ -1,0 +1,18 @@
+.navbar-collapse.show {
+  background-color: #a18def;
+
+}
+
+.navbar-collapse {
+  transition: none !important;
+}
+
+.navbar {
+  min-height: 96px;
+  /* Ajusta este valor a la altura que prefieras */
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+  /* Alinea los elementos del nav a la derecha */
+}

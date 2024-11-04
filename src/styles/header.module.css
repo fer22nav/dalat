@@ -1,0 +1,15 @@
+/* .navbar-expand-lg {
+  background-color: #f5e9d7;
+  width: 100%;
+} */
+
+.navbar-toggler-icon::before {
+  content: '☰';
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon::before {
+  content: '✕';
+  /* Cambia a la X cuando el menú está abierto */
+}
