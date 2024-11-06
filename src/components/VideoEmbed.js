@@ -2,24 +2,20 @@ import React from 'react';
 
 const VideoEmbed = () => {
 
-  const embedUrl = `https://www.youtube.com/watch?v=5yX4gH7uHE0&t=2s`;
+
 
   return (
     <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
       <iframe
-        src={embedUrl}
-        title="YouTube Video"
-        frameborder="0"
-        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        width="100%"
+        height="315"
+        src="https://www.youtube.com/watch?v=5yX4gH7uHE0&t=2s"
+        title="Video de YouTube"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-        }}
-      />
+        style={{ border: '2px solid #008080', marginBottom: '1rem' }}
+      ></iframe>
     </div>
   );
 };
