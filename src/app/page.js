@@ -153,14 +153,25 @@ export default function Home() {
               />
             </Col>
             <Col lg={5} className="d-flex flex-column justify-content-center">
-              <h2 className="text-blue" style={{ fontSize: '50px', fontWeight: '600' }}>
+              <h2 className="text-blue mx-3" style={{ fontSize: '50px', fontWeight: '600' }}>
                 Última<br /> capacitación
               </h2>
-              <p className="lead text-dark-blue mt-3" style={{ lineHeight: '1.8' }}>
-                Enterate de todas nuestras capacitaciones en las<br /> redes sociales, o suscribite a nuestro canal de<br /> YouTube
+
+              <p className="lead text-dark-blue mt-3 mx-3" style={{ lineHeight: '1.8' }}>
+                {/* Versión para Desktop */}
+                <span className="d-none d-lg-block">
+                  Enterate de todas nuestras capacitaciones en las<br /> redes sociales, o suscribite a nuestro canal de<br /> YouTube.
+
+                </span>
+
+                {/* Versión para Mobile */}
+                <span className="d-lg-none">
+                  Enterate de todas nuestras<br /> capacitaciones en las redes sociales,<br /> o suscribite a nuestro canal de YouTube.
+                </span>
               </p>
+
               <div className="d-flex justify-content-lg-start justify-content-center mt-5">
-                <Button variant="secondary" className="px-5 py-3 fw-semibold">
+                <Button variant="secondary" className="px-5 py-3 fw-semibold mb-5 mb-lg-0">
                   Youtube de Fundación Dalat
                 </Button>
               </div>
@@ -168,6 +179,7 @@ export default function Home() {
           </Row>
         </Container>
       </section>
+
 
     </>
   );
