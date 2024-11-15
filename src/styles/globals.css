@@ -56,6 +56,19 @@
   /* Altura para pantallas grandes */
 }
 
+.bg-gradient-blue-purple {
+  background: linear-gradient(135deg, #1e3a8a, #6b21a8);
+  height: 500px;
+}
+
+.bg-gradient-images {
+  /* background-image: url('/images/background-egg.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px; */
+}
+
 /* Para pantallas pequeñas (móviles) */
 @media (max-width: 767px) {
 
